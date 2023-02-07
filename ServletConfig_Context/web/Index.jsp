@@ -10,8 +10,23 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <style>
+            div{
+                display: flex;
+                justify-content: space-around;
+            }
+        </style>
     </head>
     <body>
         <h1>Hello World!</h1>
+        <div>
+            <form action="Servlet1">
+                <input type="submit" value="Goto Servlet 1">
+            </form>
+            <form action="Servlet2">
+                <input type="submit" value="Goto Servlet 2">
+            </form>
+        </div>
+
     </body>
 </html>

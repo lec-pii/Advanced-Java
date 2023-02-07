@@ -23,33 +23,18 @@ public class Servlet1 extends HttpServlet {
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
         ServletConfig config = getServletConfig();
         PrintWriter out = response.getWriter();
-        out.println("<h1>"+ config.getInitParameter("msg") +"</h1><br>");
+        response.setContentType("text/html");
+        out.println("<h2> Information from Servlet config </h2>");
+        out.println("<h5>"+ config.getInitParameter("msg") +"</h5><br>");
+        
         
         ServletContext application = getServletContext();
-        out.println("<h1>"+ application.getInitParameter("message") +"</h1>");
+        out.println("<h2> Information from ServletContext config </h2>");
+        out.println("<h5>"+ application.getInitParameter("message") +"</h5>");
     }
  
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        
-        ServletConfig config = getServletConfig();
-        PrintWriter out = response.getWriter();
-        out.println("<h1>"+ config.getInitParameter("msg") +"</h1><br>");
-        
-        ServletContext application = getServletContext();
-        out.println("<h1>"+ application.getInitParameter("message") +"</h1>");
-        
-    }
-
-    
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        
-    }
-
     
 }
