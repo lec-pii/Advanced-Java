@@ -1,0 +1,54 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 16 Feb 2023, 09:32:28
+    Author     : tumelo.pii
+*/
+*{
+    margin:5px;
+}
+body{
+
+}
+form{
+    padding : 20px;
+    outline: 2px solid red;
+    margin-bottom: 100px;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+}
+hr{
+    margin:20px 0px;
+}
+#appName{
+    margin: auto;
+    color: red;
+}
+h1{
+    margin: auto;
+}
+.particulars{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.submit{
+    display: flex;
+    justify-content: flex-end;
+}
+input[type="submit"]{
+    background-color: #f5474a;
+    padding:10px;
+    border: 0px solid red;
+    border-radius: 5px;
+}
+input[type="submit"]:hover{
+    background-color: red;
+    color:#ffffff;
+
+}
